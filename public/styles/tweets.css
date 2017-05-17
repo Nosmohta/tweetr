@@ -12,31 +12,27 @@
   background-color:lightgrey;
   padding: 10px;
   height: 70px;
- 
 }
 
 .tweet header img {
   float: left;
   height: 50px;
   margin-right:10px;
-
 }
 
 .tweet .name {
   float: left;
   font-size: 1.5em;
-
 }
 
 .tweet .handle {
   float: right;
 }
 
-.tweet p {
+.tweet .body {
     clear:both;
     margin:10px;
     height: 50px;
-
 }
 
 .tweet footer {
@@ -44,5 +40,28 @@
   border-top-width: 1px;
   border-top-color:lightgrey;
   height: 33px;
+}
 
+.tweet .daysago {
+  margin-left: 10px;
+  font-size: 0.8em;
+  height: 33px;
+  line-height: 33px;
+  float:left;
+  width: 100px;
+}
+
+.tweet .symbols {
+  margin-right:10px;
+  line-height: 33px;
+  float:right;
+  opacity: 0;
+}
+
+.tweet:hover .symbols {
+  opacity: 1;
+  margin-right:10px;
+  line-height: 33px;
+  float:right;
+  transition: .7s cubic-bezier(0.52, 0.01, 0.25, 1);
 }
