@@ -28,3 +28,11 @@
     margin-top:5px;
     float: right;
 }
+
+.errMSG {
+ 
+    margin:5px;
+    color: red;
+    float: left;
+}
+
