@@ -7,6 +7,7 @@
   color: #e8fdff;
   padding-left: 2em;
   padding-right: 2em;
+  z-index: 2;
 }
 
 
@@ -25,3 +26,22 @@
   float:left;
   line-height:  2em;
 }
+
+
+#compose input {
+  float:right;
+  background-color: #e8fdff;
+  height: 40px;
+  border-radius: 7px;
+  border-style: solid;
+  border-color: #908e8e;
+  border-width: 1.5px;
+  margin-top: 20px;
+}
+
+#compose input:hover {
+
+
+  
+}
+

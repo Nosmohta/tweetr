@@ -49,6 +49,7 @@ $(document).on("ready", () => {
 
   loadTweets();
 
+
   $(".new-tweet").on("submit", "form", function(event) {
     event.preventDefault();
     $(".errMSG").remove();
@@ -69,6 +70,15 @@ $(document).on("ready", () => {
       })
     }
   })
+
+
+  $("#compose").on("submit", function(event) {
+    event.preventDefault();
+    $(".new-tweet").slideToggle( 300, "swing", function() {
+        $("textarea").focus();
+    });
+  })
+
 
 
 })
