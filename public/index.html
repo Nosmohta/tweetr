@@ -17,12 +17,15 @@
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
   </head>
 
   <body>
@@ -39,6 +42,7 @@
     <!-- Page-specific (main) content here -->
     <main id="container" class="container">
 
+      <!-- New Tweet content here -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
@@ -48,10 +52,9 @@
         </form>
       </section>
 
+      <!-- Tweets content here -->
       <section id="tweets">
-
       </section>
-
 
     </main>
   </body>
