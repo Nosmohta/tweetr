@@ -18,8 +18,12 @@ $(document).on("ready", () => {
 
     let daysAgo =  Math.round(((new Date().getTime()) - tweet.created_at) / 86400000);
     let created = $("<div>").addClass("daysago").text(daysAgo + " days ago");
-    let symbols = $("<div>").addClass("symbols").text("\u2691 \u2665");
-    let footer = $("<footer>").append( created, symbols);
+
+    let retweet = $("<i>").addClass("symbols fa fa-retweet");
+    let heart = $("<i>").addClass("symbols fa fa-heart");
+    let flag = $("<i>").addClass("symbols fa fa-flag");
+    //let symbols = $("<div>").addClass("symbols").append(retweet, heart, flag);
+    let footer = $("<footer>").append( created, retweet, heart, flag);
 
     let tweetElement = $("<article>").addClass("tweet").append( header, body, footer);
 

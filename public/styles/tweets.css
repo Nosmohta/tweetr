@@ -7,6 +7,8 @@
   margin-left: auto;
   margin-right:auto;
   margin-top:1em;
+  opacity: .7;
+ 
 }
 
 .tweet header {
@@ -51,6 +53,13 @@
   float:left;
   width: 100px;
 }
+
+
+.tweet:hover {
+    opacity: 1;
+    box-shadow: 1px 1px #bdbbbb
+}
+
 
 .tweet .symbols {
   margin-right:10px;
